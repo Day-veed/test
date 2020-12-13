@@ -29,8 +29,7 @@ c: string = ""
     const yob = target.querySelector('#yob').value
     let gender = target.querySelector('.gender').value
     
-
-//mega is a fresh boy
     console.log(firstName, surname, email, password, Cpassword, dob, mob, yob, gender)
   }
 }
+//testing git
