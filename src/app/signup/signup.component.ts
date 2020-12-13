@@ -28,17 +28,9 @@ c: string = ""
     const mob = target.querySelector('#mob').value
     const yob = target.querySelector('#yob').value
     let gender = target.querySelector('.gender').value
-    if(this.f){
-      gender = "female"
-    }
-    if(this.m){
-      gender = "male"
-    }
-    if(this.c){
-      gender = "custom"
-    }
+    
 
-
+//mega is a fresh boy
     console.log(firstName, surname, email, password, Cpassword, dob, mob, yob, gender)
   }
 }
