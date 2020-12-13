@@ -1,0 +1,110 @@
+form{
+    display: flex;
+    position: absolute;
+    width: 130%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+  
+  h1 {
+    display: flex;
+    position: absolute;
+    width: 25%;
+    height: 45%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: blue;
+    font-size: 50px;
+  }
+
+  h2 {
+    display: flex;
+    position: absolute;
+    width: 31%;
+    height: 68%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 17px;
+  }
+  
+  h4 {
+    margin-left: 30px;
+    color: blue;
+  }
+  
+  label {
+    color: rgb(54, 45, 54);
+  }
+  
+  select {
+    width: 225px;
+    outline: 0;
+    font-size: 18px;
+    padding: 2px 2px;
+    margin: 10px;
+    background-color: rgb(190, 184, 184);
+}
+  
+  
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background: gainsboro;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+input#email, input#password {
+    outline: 0;
+    font-size: 18px;
+    padding: 2px 2px;
+    margin: 10px;
+    background: azure;
+    border-radius: 5px;
+    border-color: lightcyan;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  button#signup {
+    margin-left: 10px;
+    padding: 5px; 
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: green;
+    color: white;
+  }
+  button#login {
+    margin-left: 3px;
+    padding-left: 115px;
+    padding-right: 115px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+  }
+  h5 {
+    display: flex;
+    position: fixed;
+    width: 130%;
+    top: 380px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }

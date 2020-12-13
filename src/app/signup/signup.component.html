@@ -1,0 +1,36 @@
+<div class="div">
+    <h2>Create your Account</h2>
+    <form (submit)="signup($event)">
+        <div class="container">
+        <h1>Sign Up</h1><h4>It's quick and easy.</h4>
+        <span><input id="fname" name="f_name" type="text" placeholder="First Name"></span>
+        <input id="sname" name="s_name" type="text" placeholder="Surname"><br><br>
+        <input id="email" name="email" type="email" placeholder="Mobile number or email address"><br><br>
+        <input id="password" name="pass" type="password" placeholder="Password"><br><br>
+        <input id="Cpassword" name="pass1" type="password" placeholder="Confirm Password"><br><br>
+            
+        <div class="span">Date of birth</div>
+        <select name="dob" id="dob">
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select>
+        <select name="mob" id="mob">
+            <option value="January">Jan</option>
+            <option value="February">Feb</option>
+        </select>
+        <select name="yob" id="yob">
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+        </select>
+        
+        <div class="span">Gender</div>
+        <div id="gender">
+            <input class="gender"  name="gender"  type="radio"><label>Female</label>
+            <input class="gender"  name="gender"  type="radio"><label>Male</label>
+            <input class="gender"  name="gender"  type="radio"><label>Custom</label>
+        </div>
+        <br>
+        <button>Sign Up</button>
+        </div>
+    </form>
+</div>

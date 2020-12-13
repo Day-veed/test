@@ -1,0 +1,25 @@
+<html>
+    <head>
+
+    </head>
+    <body class="body">
+        <h1>facebook</h1>
+        <h2>Facebook helps you connect and share<br>with the people in your life.</h2>
+
+<form  (submit)="login($event)">
+    <div class="container">
+        <div>
+            <input type="email" placeholder="Email or phone" id="email">
+        </div>
+        <div>
+            <input type="password" placeholder="Password" id="password">
+        </div>
+        <button type="submit" id="login" >Log In</button>
+        <h4>forgotten password?</h4>
+        <button type="button" id="signup" (click)="signup();">Create New Account</button>
+    </div>
+</form>
+<div id="word"><h5>Create a page for a celebrity, band or business</h5></div>
+
+    </body>
+</html>
