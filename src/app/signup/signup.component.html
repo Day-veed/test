@@ -25,9 +25,9 @@
         
         <div class="span">Gender</div>
         <div id="gender">
-            <input class="gender"  name="gender"  type="radio"><label>Female</label>
-            <input class="gender"  name="gender"  type="radio"><label>Male</label>
-            <input class="gender"  name="gender"  type="radio"><label>Custom</label>
+            <input [(ngModel)]="female"  name="female"  type="radio" value="f"><label>Female</label>
+            <input [(ngModel)]="male"  name="male"  type="radio" value="m"><label>Male</label>
+            <input [(ngModel)]="custom"  name="custom"  type="radio" value="c"><label>Custom</label>
         </div>
         <br>
         <button>Sign Up</button>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { stringify } from 'querystring';
+import { AuthService } from '../auth.service';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-signup',
@@ -7,10 +9,10 @@ import { stringify } from 'querystring';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-f: string = ""
-m: string = ""
-c: string = ""
-  constructor() { }
+female: string = ""
+male: string = ""
+custom: string = ""
+  constructor(private auth: AuthService, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -27,8 +29,27 @@ c: string = ""
     const dob = target.querySelector('#dob').value
     const mob = target.querySelector('#mob').value
     const yob = target.querySelector('#yob').value
-    let gender = target.querySelector('.gender').value
+    let gender;
+    if(this.female){
+      gender = "female"
+    }
+    else if(this.male){
+      gender = "male"
+    }
+    else if(this.custom){
+      gender = "custom"
+    }
+    else{
+      gender = ""
+    }
     
+    if(errors.length === 0){
+      this.auth.signup(firstName, surname, email,password, Cpassword, dob, mob, yob, gender).subscribe(data => {
+        if (data.success) {
+          this.router.navigate(['login'])
+        }
+      })
+    }
     console.log(firstName, surname, email, password, Cpassword, dob, mob, yob, gender)
   }
 }
